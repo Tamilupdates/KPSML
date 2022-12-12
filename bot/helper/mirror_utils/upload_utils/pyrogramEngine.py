@@ -148,9 +148,6 @@ class TgUploader:
             new_path = ospath.join(dirpath, file_)
             osrename(up_path, new_path)
             up_path = new_path
-        else:
-            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>"
-            cap = f"\n\n{CAPTION_X}\n\n"
 
         dumpid = LEECH_DICT.get(self.__listener.message.from_user.id, "")
         if len(dumpid) != 0:
