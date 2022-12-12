@@ -106,7 +106,7 @@ class TgUploader:
             LOGGER.info("Remname : "+file_)
         if PRENAME:
             if not file_.startswith(PRENAME):
-                file_ = f"{PRENAME}{file_}"
+                file_ = f"{PRENAME} - {file_}"
         if SUFFIX:
             sufLen = len(SUFFIX)
             fileDict = file_.split('.')
@@ -120,7 +120,7 @@ class TgUploader:
                             )
             file_ = _newExtFileName
         if PRENAME or REMNAME or SUFFIX:
-            new_path = ospath.join(dirpath, file_)
+            new_path = ospath.join(dirpath, file_.strip('-').strip('_'))
             osrename(up_path, new_path)
             up_path = new_path
         cfont = CAPTION_FONT if not FSTYLE else FSTYLE
