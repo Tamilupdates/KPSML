@@ -242,7 +242,7 @@ class MirrorLeechListener:
 
         #MysteryStyle ~ Tele-LeechX
         if file_.startswith('www'):
-            file_ = ' '.join(file_.split()[1:]).strip('-').strip('_')
+            file_ = ''.join(file_.split()[1:]).strip('-').strip('_')
             sfile_ = file_ 
         if REMNAME:
             if not REMNAME.startswith('|'):
@@ -276,7 +276,7 @@ class MirrorLeechListener:
             file_ = _newExtFileName
 
         if EMOJI_THEME is True:
-            slmsg = f"🗂️ Name: <{NAME_FONT}>{sfile_}</{NAME_FONT}>\n\n"
+            slmsg = f"🗂️ Name: <{NAME_FONT}>{file_}</{NAME_FONT}>\n\n"
             slmsg += f"📐 Size: {size}\n"
             slmsg += f"👥 Added by: {self.tag} | <code>{self.user_id}</code>\n\n"
         else:
@@ -350,7 +350,7 @@ class MirrorLeechListener:
 
         if BOT_PM and FORCE_BOT_PM and not self.isPrivate:
             if EMOJI_THEME is True:
-                msg = f"<b>🗂️ Name: </b><{NAME_FONT}>{sfile_}</{NAME_FONT}>\n"
+                msg = f"<b>🗂️ Name: </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n"
             else:
                 msg = f"<b>Name: </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n"
             botpm = f"<b>\nHey {self.tag}!, I have sent your stuff in PM.</b>\n"
@@ -373,9 +373,9 @@ class MirrorLeechListener:
                 reply_to.delete()
 
         if EMOJI_THEME is True:
-            msg = f"<b>╭🗂️ Name: </b><{NAME_FONT}>{sfile_}</{NAME_FONT}>\n<b>├📐 Size: </b>{size}"
+            msg = f"<b>╭🗂️ Name: </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n<b>├📐 Size: </b>{size}"
         else:
-            msg = f"<b>╭ Name: </b><{NAME_FONT}>{sfile_}</{NAME_FONT}>\n<b>├ Size: </b>{size}"
+            msg = f"<b>╭ Name: </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n<b>├ Size: </b>{size}"
 
 
         if self.isLeech:
