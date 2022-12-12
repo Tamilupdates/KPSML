@@ -106,7 +106,7 @@ class TgUploader:
 
         if PRENAME:
             if not file_.startswith(PRENAME):
-                file_ = f"{PRENAME} +' '+{file_}"
+                file_ = f"{PRENAME} + {file_.strip('-').strip('_')}"
 
 
         if SUFFIX:
