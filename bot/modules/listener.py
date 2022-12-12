@@ -275,11 +275,11 @@ class MirrorLeechListener:
             file_ = _newExtFileName
 
         if EMOJI_THEME is True:
-            slmsg = f"🗂️ Name: <{NAME_FONT}>{file_.strip('-').strip('_')}</{NAME_FONT}>\n\n"
+            slmsg = f"🗂️ Name: <{NAME_FONT}>{file_}</{NAME_FONT}>\n\n"
             slmsg += f"📐 Size: {size}\n"
             slmsg += f"👥 Added by: {self.tag} | <code>{self.user_id}</code>\n\n"
         else:
-            slmsg = f"Name: <{NAME_FONT}>{file_.strip('-').strip('_')}</{NAME_FONT}>\n\n"
+            slmsg = f"Name: <{NAME_FONT}>{file_}</{NAME_FONT}>\n\n"
             slmsg += f"Size: {size}\n"
             slmsg += f"Added by: {self.tag} | <code>{self.user_id}</code>\n\n"
         if LINK_LOGS:
@@ -372,9 +372,9 @@ class MirrorLeechListener:
                 reply_to.delete()
 
         if EMOJI_THEME is True:
-            msg = f"<b>╭🗂️ Name: </b><{NAME_FONT}>{file_.strip('-').strip('_')}</{NAME_FONT}>\n<b>├📐 Size: </b>{size}"
+            msg = f"<b>╭🗂️ Name: </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n<b>├📐 Size: </b>{size}"
         else:
-            msg = f"<b>╭ Name: </b><{NAME_FONT}>{file_.strip('-').strip('_')}</{NAME_FONT}>\n<b>├ Size: </b>{size}"
+            msg = f"<b>╭ Name: </b><{NAME_FONT}>{file_}</{NAME_FONT}>\n<b>├ Size: </b>{size}"
 
 
         if self.isLeech:
