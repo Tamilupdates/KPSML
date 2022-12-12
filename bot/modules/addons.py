@@ -85,7 +85,6 @@ def caption_set(update, context):
             return
     buttons.sbutton("🛠 Change Font Style", f"capfont {user_id_} font")
     button = buttons.build_menu(2)
-    if (BotCommands.CaptionCommand in update.message.text) 
     if (BotCommands.CaptionCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
         hlp_me = "<b>Send text with format along with command line:</b>\n"
         hlp_me += f"<b>Example:</b> /{BotCommands.CaptionCommand[0]}" + "{filename}\n\n"
