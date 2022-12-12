@@ -106,9 +106,10 @@ class TgUploader:
 
         if PRENAME:
             if not file_.startswith(PRENAME):
+                file_ = ' '.join(file_.split()[1:])
                 file_ = f"{PRENAME}{file_}"
 
-        if len(PRENAME) != 0:
+'''        if len(PRENAME) != 0:
             if file_.startswith('www'):
                 file_ = ' '.join(file_.split()[1:])
                 file_ = f"{PRENAME}" + file_.strip('-').strip('_')
@@ -128,7 +129,7 @@ class TgUploader:
             cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>"
             cap = f"\n\n{CAPTION}\n\n"
 
-
+'''
         if SUFFIX:
             sufLen = len(SUFFIX)
             fileDict = file_.split('.')
