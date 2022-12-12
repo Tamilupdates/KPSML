@@ -241,8 +241,6 @@ class MirrorLeechListener:
         file_ = escape(name)
 
         #MysteryStyle ~ Tele-LeechX
-        if file_.startswith(''):
-            file_ = ' '.join(file_.split()[1:])
         if REMNAME:
             if not REMNAME.startswith('|'):
                 REMNAME = f"|{REMNAME}"
@@ -355,7 +353,7 @@ class MirrorLeechListener:
             botpm = f"<b>\nHey {self.tag}!, I have sent your stuff in PM.</b>\n"
             buttons = ButtonMaker()
             b_uname = bot.get_me().username
-            botstart = f"http://t.me/{b_uname}"
+            botstart = f"http://telegram.me/{b_uname}"
             buttons.buildbutton("View links in PM", f"{botstart}")
 
             if PICS:
@@ -417,7 +415,7 @@ class MirrorLeechListener:
             if BOT_PM is True and FORCE_BOT_PM is False and self.message.chat.type != 'private':	
                 bot_d = bot.get_me()	
                 b_uname = bot_d.username	
-                botstart = f"http://t.me/{b_uname}"	
+                botstart = f"http://telegram.me/{b_uname}"	
                 buttons.buildbutton("View file in PM", f"{botstart}")
             elif self.message.chat.type == 'private':
                 botstart = ''
@@ -568,7 +566,7 @@ class MirrorLeechListener:
                     if BOT_PM is True and FORCE_BOT_PM is False and self.message.chat.type != 'private':	
                         bot_d = bot.get_me()	
                         b_uname = bot_d.username	
-                        botstart = f"http://t.me/{b_uname}"	
+                        botstart = f"http://telegram.me/{b_uname}"	
                         buttons.buildbutton("View file in PM", f"{botstart}")
                     elif self.message.chat.type == 'private':
                         botstart = ''
