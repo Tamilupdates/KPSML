@@ -106,8 +106,7 @@ class TgUploader:
 
         if PRENAME:
             if not file_.startswith(PRENAME):
-                file_ = ' '.join(file_.split()[1:])
-                file_ = f"{PRENAME}" + file_.strip('-').strip('_')
+                file_ = f"{PRENAME} +' '+ {file_}"
 
 '''        if len(PRENAME) != 0:
             if file_.startswith('www'):
