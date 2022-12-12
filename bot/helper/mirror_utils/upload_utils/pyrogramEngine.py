@@ -87,10 +87,8 @@ class TgUploader:
 
         #MysteryStyle
         if file_.startswith('www'):
-            file_ = ''.join(file_.split()[1:]).strip('-').strip('_')
-            new_path = ospath.join(dirpath, file_)
-            osrename(up_path, new_path)
-            upld_path = new_path
+            file_ = ' '.join(file_.split()[1:]).strip('-').strip('_')
+            upld_path = ospath.join(dirpath, file_)
         if REMNAME:
             if not REMNAME.startswith('|'):
                 REMNAME = f"|{REMNAME}"
