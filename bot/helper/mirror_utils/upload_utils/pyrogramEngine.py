@@ -88,6 +88,7 @@ class TgUploader:
         #MysteryStyle
         if file_.startswith('www'):
             file_ = ' '.join(file_.split()[1:])
+            file_ = file_.strip('-').strip('_')
         if REMNAME:
             if not REMNAME.startswith('|'):
                 REMNAME = f"|{REMNAME}"
@@ -103,12 +104,9 @@ class TgUploader:
                     __newFileName = __newFileName.replace(args[0], '')
             file_ = __newFileName
             LOGGER.info("Remname : "+file_)
-
         if PRENAME:
             if not file_.startswith(PRENAME):
-                file_ = f"{PRENAME} , {file_.strip('-').strip('_')}, {'-'}"
-
-
+                file_ = f"{PRENAME}{file_}"
         if SUFFIX:
             sufLen = len(SUFFIX)
             fileDict = file_.split('.')
