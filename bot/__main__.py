@@ -249,7 +249,7 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.CaptionCommand[0]}</b>: Set Caption for leech files
 <br><br>
-• <b>/{BotCommands.UserLogCommand}</b>: Add Dump Channel for leech files. make sure bot should an admin in dump channel.
+• <b>/{BotCommands.UserLogCommand[0]}</b>: Add Dump Channel for leech files. make sure bot should an admin in dump channel.
 <br><br>
 • <b>/{BotCommands.LeechSetCommand[0]}</b>: Leech settings
 <br><br>
@@ -292,7 +292,7 @@ except Exception as err:
 
 
 help_string_telegraph_admin = f'''
-<b><u>🛡️ Admin Commands</u></b>
+<b><u>Admin Commands 🛡️</u></b>
 <br><br>
 • <b>/{BotCommands.PingCommand}</b>: Check how long it takes to Ping the Bot
 <br><br>
@@ -329,7 +329,7 @@ def bot_help(update, context):
     button = ButtonMaker()
     if EMOJI_THEME is True:
         button.buildbutton("👤 User", f"https://graph.org/{help_user}")
-        button.buildbutton("🛡️ Admin", f"https://graph.org/{help_admin}")
+        button.buildbutton("Admin 🛡️", f"https://graph.org/{help_admin}")
     else:
         button.buildbutton("User", f"https://graph.org/{help_user}")
         button.buildbutton("Admin", f"https://graph.org/{help_admin}")
