@@ -18,7 +18,7 @@ def prefix_set(update, context):
         if not (user_id_ in PAID_USERS) and user_id_ != OWNER_ID:
             sendMessage(f"Buy Paid Service to Use this Prename Feature.", context.bot, update.message)
             return
-    if (BotCommands.PreNameCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
+    if (BotCommands.PreNameCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
         help_msg = "<b>Send Prename after command:</b>"
         help_msg += f"\n<code>/{BotCommands.PreNameCommand[0]}" + " {prename}" + "</code>\n"
         help_msg += "\n<b>By Replying to Message (Including Prename):</b>"
@@ -50,7 +50,7 @@ def suffix_set(update, context):
         if not (user_id_ in PAID_USERS) and user_id_ != OWNER_ID:
             sendMessage(f"Buy Paid Service to Use this Sufname Feature.", context.bot, update.message)
             return
-    if (BotCommands.SufNameCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
+    if (BotCommands.SufNameCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
         help_msg = "<b>Send sufname after command:</b>"
         help_msg += f"\n<code>/{BotCommands.SufNameCommand[0]}" + " {sufname}" + "</code>\n"
         help_msg += "\n<b>By Replying to Message (Including Sufname):</b>"
@@ -197,11 +197,11 @@ def userlog_set(update, context):
         if not (user_id_ in PAID_USERS) and user_id_ != OWNER_ID:
             sendMessage(f"Buy Paid Service to Use this Dump Feature.", context.bot, update.message)
             return
-    if (BotCommands.UserLogCommand in update.message.text) and (len(update.message.text.split(' ')) == 1):
+    if (BotCommands.UserLogCommand[0] in update.message.text) and (len(update.message.text.split(' ')) == 1):
         help_msg = "<b>Send channel id after command:</b>"
-        help_msg += f"\n<code>/{BotCommands.UserLogCommand}" + " -100xxxxxxx" + "</code>\n"
+        help_msg += f"\n<code>/{BotCommands.UserLogCommand[0]}" + " -100xxxxxxx" + "</code>\n"
         help_msg += "\n<b>By Replying to Message (Including Channel ID):</b>"
-        help_msg += f"\n<code>/{BotCommands.UserLogCommand}" + " {message}" + "</code>"
+        help_msg += f"\n<code>/{BotCommands.UserLogCommand[0]}" + " {message}" + "</code>"
         sendMessage(help_msg, context.bot, update.message)
         return
     lm = sendMessage("Checking your Channel ID... 🛃", context.bot, update.message)          
