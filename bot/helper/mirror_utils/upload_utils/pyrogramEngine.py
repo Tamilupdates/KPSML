@@ -106,7 +106,7 @@ class TgUploader:
 
         if PRENAME:
             if not file_.startswith(PRENAME):
-                file_ = f"{PRENAME} +' '+ {file_}"
+                file_ = f"{PRENAME} +' '+{file_}"
 
 '''        if len(PRENAME) != 0:
             if file_.startswith('www'):
@@ -123,10 +123,10 @@ class TgUploader:
                 cap = f"\n\n{CAPTION}\n\n"
                 new_path = ospath.join(dirpath, file_)
                 osrename(up_path, new_path)
-                up_path = new_path
+                up_path = new_path                              '''
         else:
             cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>"
-            cap = f"\n\n{CAPTION}\n\n"                                          '''
+            cap = f"\n\n{CAPTION}\n\n"                                          
 
 
         if SUFFIX:
