@@ -86,8 +86,6 @@ class TgUploader:
         FSTYLE = CFONT_DICT.get(self.__listener.message.from_user.id, ["", ""])[1]
 
         #MysteryStyle
-        if file_.startswith(''):
-            file_ = ' '.join(file_.split()[1:])
         if REMNAME:
             if not REMNAME.startswith('|'):
                 REMNAME = f"|{REMNAME}"
