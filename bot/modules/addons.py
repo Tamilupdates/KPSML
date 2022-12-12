@@ -247,7 +247,7 @@ def remname_set(update, context):
         hlp_msg += f"\n<code>/{BotCommands.RemnameCommand[0]}" + " {remname}" + "</code>\n"
         hlp_msg += "\n<b>By Replying to Message (Including Remname):</b>"
         hlp_msg += f"\n<code>/{BotCommands.RemnameCommand[0]}" + " {message}" + "</code>"
-        sendMessage(hlp_me, context.bot, update.message)
+        sendMessage(hlp_msg, context.bot, update.message)
     else:
         lm = sendMessage(f"<b>Please Wait....Processing🤖</b>", context.bot, update.message)
         pre_send = update.message.text.split(" ", maxsplit=1)
