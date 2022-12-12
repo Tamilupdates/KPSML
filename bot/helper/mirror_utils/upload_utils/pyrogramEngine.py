@@ -103,9 +103,32 @@ class TgUploader:
                     __newFileName = __newFileName.replace(args[0], '')
             file_ = __newFileName
             LOGGER.info("Remname : "+file_)
-        if PRENAME:
-            if not file_.startswith(PRENAME):
-                file_ = f"{PRENAME}{file_}"
+
+#        if PRENAME:
+#            if not file_.startswith(PRENAME):
+#                file_ = f"{PRENAME}{file_}"
+
+        if len(PRENAME) != 0:
+            if file_.startswith('www'):
+                file_ = ' '.join(file_.split()[1:])
+                file_ = f"{PRENAME}" + file_.strip('-').strip('_')
+                cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>"
+                cap = f"\n\n{CAPTION}\n\n"
+                new_path = ospath.join(dirpath, file_)
+                osrename(up_path, new_path)
+                up_path = new_path
+            else:
+                file_ = f"{PRENAME}" + " " + file_.strip('-').strip('_')
+                cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>"
+                cap = f"\n\n{CAPTION}\n\n"
+                new_path = ospath.join(dirpath, file_)
+                osrename(up_path, new_path)
+                up_path = new_path
+        else:
+            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>"
+            cap = f"\n\n{CAPTION}\n\n"
+
+
         if SUFFIX:
             sufLen = len(SUFFIX)
             fileDict = file_.split('.')
