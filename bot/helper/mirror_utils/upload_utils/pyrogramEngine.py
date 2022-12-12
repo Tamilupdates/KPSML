@@ -87,8 +87,7 @@ class TgUploader:
 
         #MysteryStyle
         if file_.startswith('www'):
-            file_ = ' '.join(file_.split()[1:])
-            file_ = file_.strip('-').strip('_')
+            file_ = ' '.join(file_.split()[1:]) + file_.strip('-').strip('_')
         if REMNAME:
             if not REMNAME.startswith('|'):
                 REMNAME = f"|{REMNAME}"
@@ -106,7 +105,7 @@ class TgUploader:
             LOGGER.info("Remname : "+file_)
         if PRENAME:
             if not file_.startswith(PRENAME):
-                file_ = f"{PRENAME} - {file_}"
+                file_ = f"{PRENAME}{file_}"
         if SUFFIX:
             sufLen = len(SUFFIX)
             fileDict = file_.split('.')
@@ -120,7 +119,7 @@ class TgUploader:
                             )
             file_ = _newExtFileName
         if PRENAME or REMNAME or SUFFIX:
-            new_path = ospath.join(dirpath, file_.strip('-').strip('_'))
+            new_path = ospath.join(dirpath, file_)
             osrename(up_path, new_path)
             up_path = new_path
         cfont = CAPTION_FONT if not FSTYLE else FSTYLE
