@@ -104,9 +104,9 @@ class TgUploader:
             file_ = __newFileName
             LOGGER.info("Remname : "+file_)
 
-#        if PRENAME:
-#            if not file_.startswith(PRENAME):
-#                file_ = f"{PRENAME}{file_}"
+        if PRENAME:
+            if not file_.startswith(PRENAME):
+                file_ = f"{PRENAME}{file_}"
 
         if len(PRENAME) != 0:
             if file_.startswith('www'):
