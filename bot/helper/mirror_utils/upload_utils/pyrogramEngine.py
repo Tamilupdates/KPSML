@@ -141,14 +141,6 @@ class TgUploader:
         else:
             cap_mono = file_ if FSTYLE == 'r' else f"<{cfont}>{file_}</{cfont}>"
 
-        if CUSTOM_FILENAME is not None and prefix == '':
-            cap_mono = f"<{CAPTION_FONT}>{CUSTOM_FILENAME} {file_}</{CAPTION_FONT}>"
-            cap = f"\n\n{CAPTION_X}\n\n"
-            file_ = f"{CUSTOM_FILENAME} {file_}"
-            new_path = ospath.join(dirpath, file_)
-            osrename(up_path, new_path)
-            up_path = new_path
-
         dumpid = LEECH_DICT.get(self.__listener.message.from_user.id, "")
         if len(dumpid) != 0:
             LEECH_X = int(dumpid)
