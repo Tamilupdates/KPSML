@@ -6,7 +6,7 @@ from time import time, sleep
 from pyrogram.errors import FloodWait, RPCError
 from PIL import Image
 from threading import RLock
-from bot import AS_DOCUMENT, AS_DOC_USERS, AS_MEDIA_USERS, EXTENSION_FILTER, \
+from bot import AS_DOCUMENT, AS_DOC_USERS, AS_MEDIA_USERS, CUSTOM_FILENAME, EXTENSION_FILTER, \
                 app, LEECH_LOG, BOT_PM, tgBotMaxFileSize, premium_session, CAPTION_FONT, \
                 PRE_DICT, LEECH_DICT, LOG_LEECH, CAP_DICT, REM_DICT, SUF_DICT, CFONT_DICT
 from bot.helper.ext_utils.fs_utils import take_ss, get_media_info, get_media_streams, get_path_size, clean_unwanted
@@ -86,7 +86,7 @@ class TgUploader:
         FSTYLE = CFONT_DICT.get(self.__listener.message.from_user.id, ["", ""])[1]
 
         #MysteryStyle
-        if file_.startswith('www'):
+        if file_.startswith(''):
             file_ = ' '.join(file_.split()[1:])
         if REMNAME:
             if not REMNAME.startswith('|'):
@@ -140,6 +140,17 @@ class TgUploader:
                         cap_mono = cap_mono.replace(args[0], '')
         else:
             cap_mono = file_ if FSTYLE == 'r' else f"<{cfont}>{file_}</{cfont}>"
+
+        if CUSTOM_FILENAME is not None and prefix == '':
+            cap_mono = f"<{CAPTION_FONT}>{CUSTOM_FILENAME} {file_}</{CAPTION_FONT}>"
+            cap = f"\n\n{CAPTION_X}\n\n"
+            file_ = f"{CUSTOM_FILENAME} {file_}"
+            new_path = ospath.join(dirpath, file_)
+            osrename(up_path, new_path)
+            up_path = new_path
+        else:
+            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>"
+            cap = f"\n\n{CAPTION_X}\n\n"
 
         dumpid = LEECH_DICT.get(self.__listener.message.from_user.id, "")
         if len(dumpid) != 0:

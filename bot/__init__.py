@@ -146,7 +146,7 @@ try:
     if len(TGH_THUMB) == 0:
         raise KeyError
 except:
-    TGH_THUMB = 'https://te.legra.ph/file/3325f4053e8d68eab07b5.jpg'
+    TGH_THUMB = 'https://graph.org/file/eadc4eff4fceb861e3de8.jpg'
 
 path = "Thumbnails/"
 if not ospath.isdir(path):
@@ -459,7 +459,7 @@ try:
         raise KeyError
 except:
     START_BTN1_NAME = 'Master'
-    START_BTN1_URL = 'https://t.me/krn_adhikari'
+    START_BTN1_URL = 'https://telegram.me/Nanthakps'
 
 try:
     START_BTN2_NAME = getConfig('START_BTN2_NAME')
@@ -467,8 +467,8 @@ try:
     if len(START_BTN2_NAME) == 0 or len(START_BTN2_URL) == 0:
         raise KeyError
 except:
-    START_BTN2_NAME = 'Support Group'
-    START_BTN2_URL = 'https://t.me/WeebZone_updates'
+    START_BTN2_NAME = 'Support Channel'
+    START_BTN2_URL = 'https://telegram.me/KPSTorrent'
 try:
     BUTTON_FOUR_NAME = getConfig('BUTTON_FOUR_NAME')
     BUTTON_FOUR_URL = getConfig('BUTTON_FOUR_URL')
@@ -559,12 +559,12 @@ try:
     EQUAL_SPLITS = EQUAL_SPLITS.lower() == 'true'
 except:
     EQUAL_SPLITS = False
-# try:
-#     CUSTOM_FILENAME = getConfig('CUSTOM_FILENAME')
-#     if len(CUSTOM_FILENAME) == 0:
-#         raise KeyError
-# except:
-#     CUSTOM_FILENAME = None
+try:
+    CUSTOM_FILENAME = getConfig('CUSTOM_FILENAME')
+    if len(CUSTOM_FILENAME) == 0:
+        raise KeyError
+except:
+    CUSTOM_FILENAME = None
 try:
     MIRROR_ENABLED = getConfig("MIRROR_ENABLED")
     MIRROR_ENABLED = MIRROR_ENABLED.lower() == "true"
@@ -679,28 +679,28 @@ except KeyError:
 try:
     AUTHOR_NAME = getConfig('AUTHOR_NAME')
     if len(AUTHOR_NAME) == 0:
-        AUTHOR_NAME = 'Karan'
+        AUTHOR_NAME = 'Nanthakps'
 except KeyError:
-    AUTHOR_NAME = 'Karan'
+    AUTHOR_NAME = 'Nanthakps'
 try:
     AUTHOR_URL = getConfig('AUTHOR_URL')
     if len(AUTHOR_URL) == 0:
-        AUTHOR_URL = 'https://t.me/WeebZone_updates'
+        AUTHOR_URL = 'https://telegram.me/Nanthakps'
 except KeyError:
-    AUTHOR_URL = 'https://t.me/WeebZone_updates'
+    AUTHOR_URL = 'https://telegram.me/Nanthakps'
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
-        TITLE_NAME = 'WeebZone'
+        TITLE_NAME = 'Leech Bot'
 except KeyError:
-    TITLE_NAME = 'WeebZone'
+    TITLE_NAME = 'Leech Bot'
 
 try:
     GD_INFO = getConfig('GD_INFO')
     if len(GD_INFO) == 0:
-        GD_INFO = 'Uploaded by WeebZone Mirror Bot'
+        GD_INFO = 'Uploaded by Leech Bot'
 except KeyError:
-    GD_INFO = 'Uploaded by WeebZone Mirror Bot'
+    GD_INFO = 'Uploaded by Leech Bot'
 try:
     DISABLE_DRIVE_LINK = getConfig('DISABLE_DRIVE_LINK')
     DISABLE_DRIVE_LINK = DISABLE_DRIVE_LINK.lower() == 'true'
@@ -711,21 +711,21 @@ except KeyError:
 try:
     CREDIT_NAME = getConfig('CREDIT_NAME')
     if len(CREDIT_NAME) == 0:
-        CREDIT_NAME = 'WeebZone'
+        CREDIT_NAME = 'Nanthakps'
 except KeyError:
-    CREDIT_NAME = 'WeebZone'
+    CREDIT_NAME = 'Nanthakps'
 try:
     NAME_FONT = getConfig('NAME_FONT')
     if len(NAME_FONT) == 0:
-        NAME_FONT = 'code'
+        NAME_FONT = 'i'
 except KeyError:
-    NAME_FONT = 'code'
+    NAME_FONT = 'i'
 try:
     CAPTION_FONT = getConfig('CAPTION_FONT')
     if len(CAPTION_FONT) == 0:
-        CAPTION_FONT = 'code'
+        CAPTION_FONT = 'b'
 except KeyError:
-    CAPTION_FONT = 'code'
+    CAPTION_FONT = 'b'
 
 try:
     FINISHED_PROGRESS_STR = getConfig('FINISHED_PROGRESS_STR') 
@@ -744,16 +744,16 @@ try:
     if len(CHANNEL_USERNAME) == 0:
         raise KeyError
 except KeyError:
-    log_info("CHANNEL_USERNAME not provided! Using default @WeebZone_updates")
-    CHANNEL_USERNAME = "WeebZone_updates"
+    log_info("CHANNEL_USERNAME not provided! Using default @KPSTorrent")
+    CHANNEL_USERNAME = "KPSTorrent"
 try:
     FSUB_CHANNEL_ID = getConfig("FSUB_CHANNEL_ID")
     if len(FSUB_CHANNEL_ID) == 0:
         raise KeyError
     FSUB_CHANNEL_ID = int(FSUB_CHANNEL_ID)
 except KeyError:
-    log_info("CHANNEL_ID not provided! Using default id of @WeebZone_updates")
-    FSUB_CHANNEL_ID = -1001512307861
+    log_info("CHANNEL_ID not provided! Using default id of @KPSTorrent")
+    FSUB_CHANNEL_ID = -1001400896412
 try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
     if len(TOKEN_PICKLE_URL) == 0:
@@ -845,7 +845,7 @@ except:
 try:
     IMAGE_URL = getConfig('IMAGE_URL')
 except KeyError:
-    IMAGE_URL = 'https://graph.org/file/6b22ef7b8a733c5131d3f.jpg'
+    IMAGE_URL = 'https://graph.org/file/d97b51f6c90761102e0b6.jpg'
 try:
     EMOJI_THEME = getConfig('EMOJI_THEME')
     EMOJI_THEME = EMOJI_THEME.lower() == 'true'

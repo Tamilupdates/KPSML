@@ -209,10 +209,10 @@ def get_readable_message():
                     try:
                         chatid = str(download.message.chat.id)[4:]
                         if EMOJI_THEME is True:
-                            msg += f'\n<b>├🌐 Source: </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
+                            msg += f'\n<b>├🌐 Source: </b><a href="https://telegram.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
                             msg += f"\n<b>╰❌ </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"
                         else:
-                            msg += f'\n<b>├ Source: </b><a href="https://t.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
+                            msg += f'\n<b>├ Source: </b><a href="https://telegram.me/c/{chatid}/{download.message.message_id}">{download.message.from_user.first_name}</a> | <b>Id :</b> <code>{download.message.from_user.id}</code>'
                             msg += f"\n<b>╰ </b><code>/{BotCommands.CancelMirror} {download.gid()}</code>"                 
                     except:
                         pass
@@ -419,6 +419,7 @@ def get_content_type(link: str) -> str:
     return content_type
 
 
+
 ONE, TWO, THREE = range(3)
 def pop_up_stats(update, context):
     query = update.callback_query
@@ -426,8 +427,9 @@ def pop_up_stats(update, context):
     query.answer(text=stats, show_alert=True)
 def bot_sys_stats():
     currentTime = get_readable_time(time() - botStartTime)
-    cpu = psutil.cpu_percent()
-    mem = psutil.virtual_memory().percent
+    cpuUsage = psutil.cpu_percent(interval=0.5)
+    p_core = psutil.cpu_count(logical=False)
+    t_core = psutil.cpu_count(logical=True)
     disk = psutil.disk_usage(DOWNLOAD_DIR).percent
     total, used, free = shutil.disk_usage(DOWNLOAD_DIR)
     total = get_readable_file_size(total)
@@ -435,6 +437,11 @@ def bot_sys_stats():
     free = get_readable_file_size(free)
     recv = get_readable_file_size(psutil.net_io_counters().bytes_recv)
     sent = get_readable_file_size(psutil.net_io_counters().bytes_sent)
+    memory = psutil.virtual_memory()
+    mem_p = memory.percent
+    mem_t = get_readable_file_size(memory.total)
+    mem_a = get_readable_file_size(memory.available)
+    mem_u = get_readable_file_size(memory.used)
     num_active = 0
     num_upload = 0
     num_split = 0
@@ -453,12 +460,10 @@ def bot_sys_stats():
        if stats.status() == MirrorStatus.STATUS_SPLITTING:
                 num_split += 1
     stats = f"""
-CPU : {cpu}% | RAM : {mem}%
-DL : {num_active} | UP : {num_upload} | SPLIT : {num_split}
-ZIP : {num_archi} | UNZIP : {num_extract} | TOTAL : {tasks}
-Limits : T/D : {TORRENT_DIRECT_LIMIT}GB | Z/U : {ZIP_UNZIP_LIMIT}GB
-                    L : {LEECH_LIMIT}GB | M : {MEGA_LIMIT}GB
-Made with ❤️ by {CREDIT_NAME}
+🖥️ CPU: [ {t_core} Cores ] {cpuUsage}%
+🎮 RAM: [ {mem_t} ] {mem_p}%
+💾 Disk: [ {total} ] {disk}%
+🔺 UP : {num_upload}  | 🔻 DL : {num_active}  | ♻️ TOTAL : {tasks}
 """
     return stats
 dispatcher.add_handler(

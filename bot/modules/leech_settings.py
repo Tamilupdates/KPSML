@@ -46,7 +46,7 @@ def getleechinfo(from_user):
     if prefix != "Not Exists":
         buttons.sbutton("Delete Prename", f"leechset {user_id} prename")
     if suffix != "Not Exists":
-        buttons.sbutton("Delete Suffix", f"leechset {user_id} suffix")
+        buttons.sbutton("Delete Sufname", f"leechset {user_id} suffix")
     if caption != "Not Exists": 
         buttons.sbutton("Delete Caption", f"leechset {user_id} cap")
     if dumpid != "Not Exists":
@@ -54,7 +54,7 @@ def getleechinfo(from_user):
     if remname != "Not Exists": 
         buttons.sbutton("Delete Remname", f"leechset {user_id} rem")
     if cfont != "Not Exists": 
-        buttons.sbutton("Delete CapFont", f"leechset {user_id} cfont")
+        buttons.sbutton("Delete Caption Font", f"leechset {user_id} cfont")
 
     button = buttons.build_menu(2)
 
@@ -62,11 +62,11 @@ def getleechinfo(from_user):
     
 • Leech Type : <b>{ltype}</b>
 • Custom Thumbnail : <b>{thumbmsg}</b>
-• Prefix : <b>{prefix}</b>
-• Suffix : <b>{suffix}</b>
-• Caption : <b>{caption}</b>
-• CapFont : <b>{cfont}</b>
+• Prename : <b>{prefix}</b>
+• Sufname : <b>{suffix}</b>
 • Remname : <b>{remname}</b>
+• Caption : <b>{caption}</b>
+• Caption Font : <b>{cfont}</b>
 • DumpID : <b>{dumpid}</b>
 • User Plan : <b>{uplan}</b>'''
     return text, button
@@ -132,7 +132,7 @@ def setLeechType(update, context):
         SUF_DICT.pop(user_id)
         if DB_URI: 
             DbManger().user_suf(user_id, '')
-        query.answer(text="Your Suffix is Successfully Deleted!", show_alert=True)
+        query.answer(text="Your Sufname is Successfully Deleted!", show_alert=True)
         editLeechType(message, query)
     elif data[2] == "cap":
         CAP_DICT.pop(user_id)
