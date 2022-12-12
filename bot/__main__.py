@@ -243,7 +243,7 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.PreNameCommand[0]}</b>: Set Prename to leech files
 <br><br>
-• <b>/{BotCommands.SufNameCommand0[0]}</b>: Set Suffix to leech files
+• <b>/{BotCommands.SufNameCommand[0]}</b>: Set Suffix to leech files
 <br><br>
 • <b>/{BotCommands.RemnameCommand[0]}</b>: Remove Specific Words from filename
 <br><br>
