@@ -90,7 +90,6 @@ class TgUploader:
             file_ = ' '.join(file_.split()[1:]).strip('-').strip('_')
             new_path = ospath.join(dirpath, file_)
             osrename(upld_path, new_path)
-            upld_path = new_path
         if REMNAME:
             if not REMNAME.startswith('|'):
                 REMNAME = f"|{REMNAME}"
