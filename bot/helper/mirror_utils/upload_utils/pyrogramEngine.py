@@ -6,7 +6,7 @@ from time import time, sleep
 from pyrogram.errors import FloodWait, RPCError
 from PIL import Image
 from threading import RLock
-from bot import AS_DOCUMENT, AS_DOC_USERS, AS_MEDIA_USERS, CUSTOM_FILENAME, EXTENSION_FILTER, \
+from bot import AS_DOCUMENT, AS_DOC_USERS, AS_MEDIA_USERS, EXTENSION_FILTER, \
                 app, LEECH_LOG, BOT_PM, tgBotMaxFileSize, premium_session, CAPTION_FONT, \
                 PRE_DICT, LEECH_DICT, LOG_LEECH, CAP_DICT, REM_DICT, SUF_DICT, CFONT_DICT
 from bot.helper.ext_utils.fs_utils import take_ss, get_media_info, get_media_streams, get_path_size, clean_unwanted
