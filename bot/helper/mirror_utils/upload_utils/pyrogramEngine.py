@@ -87,10 +87,7 @@ class TgUploader:
 
         #MysteryStyle
         if file_.startswith('www'):
-            file_ = ' '.join(file_.split()[1:]).strip('-').strip('_')
-            new_path = ospath.join(dirpath, file_)
-            osrename(up_path, new_path)
-            up_path = new_path
+            file_ = ' '.join(file_.split()[1:])
         if REMNAME:
             if not REMNAME.startswith('|'):
                 REMNAME = f"|{REMNAME}"
@@ -108,7 +105,7 @@ class TgUploader:
             LOGGER.info("Remname : "+file_)
         if PRENAME:
             if not file_.startswith(PRENAME):
-                file_ = f"{PRENAME}{file_}"
+                file_ = f"{PRENAME}{file_.strip('-').strip('_')}"
         if SUFFIX:
             sufLen = len(SUFFIX)
             fileDict = file_.split('.')
