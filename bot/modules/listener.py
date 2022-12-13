@@ -241,6 +241,8 @@ class MirrorLeechListener:
         file_ = escape(name)
 
         #MysteryStyle ~ Tele-LeechX
+        if file_.startswith('www'):
+            file_ = ' '.join(file_.split()[1:])
         if REMNAME:
             if not REMNAME.startswith('|'):
                 REMNAME = f"|{REMNAME}"
