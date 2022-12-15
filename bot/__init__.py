@@ -146,14 +146,14 @@ try:
     if len(TGH_THUMB) == 0:
         raise KeyError
 except:
-    TGH_THUMB = 'https://graph.org/file/eadc4eff4fceb861e3de8.jpg'
+    TGH_THUMB = 'https://graph.org/file/d359648ce0f259afe968b.jpg'
 
 path = "Thumbnails/"
 if not ospath.isdir(path):
     mkdir(path)
 photo_dir = path + TGH_THUMB.split('/')[-1]
 urlretrieve(TGH_THUMB, photo_dir)
-Image.open(photo_dir).convert("RGB").save('Thumbnails/weeb.jpg', "JPEG")
+Image.open(photo_dir).convert("RGB").save('Thumbnails/KPS.jpg', "JPEG")
 osremove(photo_dir)
 
 try:
