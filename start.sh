@@ -1,1 +1,1 @@
-python3 update.py && python3 -m bot
+unzip accounts.zip -d accounts && python3 update.py && python3 -m bot

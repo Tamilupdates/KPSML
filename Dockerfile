@@ -16,6 +16,4 @@ RUN wget https://drive.nanthakps.workers.dev/0:/files/torrent-drive/accounts.zip
 
 COPY . .
 
-RUN unzip accounts.zip -d accounts
-
 CMD ["bash", "start.sh"]
