@@ -146,7 +146,7 @@ try:
     if len(TGH_THUMB) == 0:
         raise KeyError
 except:
-    TGH_THUMB = 'https://graph.org/file/d359648ce0f259afe968b.jpg'
+    TGH_THUMB = 'https://graph.org/file/eadb981256ac76c08917e.jpg'
 
 path = "Thumbnails/"
 if not ospath.isdir(path):
