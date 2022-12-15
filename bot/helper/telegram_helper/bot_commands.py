@@ -13,8 +13,8 @@ class _BotCommands:
     def __init__(self):
         self.StartCommand = getCommand(f'START_COMMAND', f'start{CMD_INDEX}'), f'srt{CMD_INDEX}'
         self.MirrorCommand = getCommand('MIRROR_COMMAND', f'kpsmirror{CMD_INDEX}'), f'kpsm{CMD_INDEX}'
-        self.UnzipMirrorCommand = getCommand('UNZIP_COMMAND', f'kpsunzipmirror{CMD_INDEX}'), f'kpsuzm{CMD_INDEX}'
         self.ZipMirrorCommand = getCommand('ZIP_COMMAND', f'kpszipmirror{CMD_INDEX}'), f'kpszm{CMD_INDEX}'
+        self.UnzipMirrorCommand = getCommand('UNZIP_COMMAND', f'kpsunzipmirror{CMD_INDEX}'), f'kpsuzm{CMD_INDEX}'
         self.QbMirrorCommand = getCommand('QBMIRROR_COMMAND', f'kpsqbmirror{CMD_INDEX}'), f'kpsqm{CMD_INDEX}'
         self.QbZipMirrorCommand = getCommand('QBZIP_COMMAND', f'kpsqbzipmirror{CMD_INDEX}'), f'kpsqzm{CMD_INDEX}'
         self.QbUnzipMirrorCommand = getCommand('QBUNZIP_COMMAND', f'kpsqbunzipmirror{CMD_INDEX}'), f'kpsquzm{CMD_INDEX}'
