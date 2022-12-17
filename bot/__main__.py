@@ -15,7 +15,7 @@ from telegram.ext import CommandHandler
 import requests
 import pytz
 from bot import bot, dispatcher, updater, botStartTime, TIMEZONE, IGNORE_PENDING_REQUESTS, LOGGER, Interval, INCOMPLETE_TASK_NOTIFIER, \
-                    DB_URI, app, main_loop, SET_BOT_COMMANDS, AUTHORIZED_CHATS, EMOJI_THEME, \
+                    DB_URI, app, main_loop, SET_BOT_COMMANDS, AUTHORIZED_CHATS, EMOJI_THEME, AUTHOR_NAME \
                     START_BTN1_NAME, START_BTN1_URL, START_BTN2_NAME, START_BTN2_URL, CREDIT_NAME, TITLE_NAME, PICS, FINISHED_PROGRESS_STR, UN_FINISHED_PROGRESS_STR, \
                     SHOW_LIMITS_IN_STATS, LEECH_LIMIT, TORRENT_DIRECT_LIMIT, CLONE_LIMIT, MEGA_LIMIT, ZIP_UNZIP_LIMIT, TOTAL_TASKS_LIMIT, USER_TASKS_LIMIT, \
                     PIXABAY_API_KEY, PIXABAY_CATEGORY, PIXABAY_SEARCH, WALLCRAFT_CATEGORY, WALLTIP_SEARCH, WALLFLARE_SEARCH
@@ -442,13 +442,13 @@ def main():
                     with open(".restartmsg") as f:
                         chat_id, msg_id = map(int, f)
                     msg = f"😎Restarted successfully❗\n\n"
-                    msg += f"🧑‍💻Master: @Nanthakps 🔥\n"
+                    msg += f"🧑‍💻Master: @{AUTHOR_NAME} 🔥\n"
                     msg += f"📅DATE: {date}\n"
                     msg += f"⌚TIME: {time}\n"
                     msg += f"🌐TIMEZONE: {TIMEZONE}\n"
                 else:
                     msg = f"😎Bot Restarted!\n\n"
-                    msg += f"🧑‍💻Master: @Nanthakps 🔥\n"
+                    msg += f"🧑‍💻Master: @{AUTHOR_NAME} 🔥\n"
                     msg += f"📅DATE: {date}\n"
                     msg += f"⌚TIME: {time}\n"
                     msg += f"🌐TIMEZONE: {TIMEZONE}"
@@ -479,11 +479,11 @@ def main():
     if ospath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
-        msg = f"😎Restarted successfully❗ \n\n🧑‍💻Master: @Nanthakps 🔥 \n📅DATE: {date}\n⌚TIME: {time}\n🌐TIMEZONE: {TIMEZONE}\n"
+        msg = f"😎Restarted successfully❗ \n\n🧑‍💻Master: @{AUTHOR_NAME} 🔥 \n📅DATE: {date}\n⌚TIME: {time}\n🌐TIMEZONE: {TIMEZONE}\n"
         bot.edit_message_text(msg, chat_id, msg_id)
         osremove(".restartmsg")
     elif not notifier_dict and AUTHORIZED_CHATS:
-        text = f"😎Bot Restarted❗ \n\n🧑‍💻Master: @Nanthakps 🔥 \n📅DATE: {date} \n⌚TIME: {time} \n🌐TIMEZONE: {TIMEZONE}"
+        text = f"😎Bot Restarted❗ \n\n🧑‍💻Master: @{AUTHOR_NAME} 🔥 \n📅DATE: {date} \n⌚TIME: {time} \n🌐TIMEZONE: {TIMEZONE}"
         for id_ in AUTHORIZED_CHATS:
             try:
                 bot.sendMessage(chat_id=id_, text=text, parse_mode=ParseMode.HTML)
