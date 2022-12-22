@@ -198,12 +198,6 @@ help_string = '''
 \n\n<b>Choose A Help Category:</b>
 '''
 
-'''
-
-'''
-
-
-
 help_string_telegraph_user = f'''
 <b><u>👤 User Commands</u></b>
 <br><br>
