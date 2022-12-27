@@ -10,7 +10,7 @@
 <div align=center>
 
 [![GitHub forks](https://img.shields.io/github/forks/Tamilupdates/KPSML?style=social)](https://github.com/Tamilupdates/KPSML/fork)
-[![GitHub followers](https://img.shields.io/github/followers/Tamilupdates?style=social&label=Tamilupdates%20Followers)](https://github.com/Tamilupdates)
+[![GitHub followers](https://img.shields.io/github/followers/Tamilupdates?style=social&label=Followers)](https://github.com/Tamilupdates)
 
 ----
 
