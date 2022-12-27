@@ -38,16 +38,16 @@
 </div>
 </p>
 
-### 1. [***Getting Started***](https://github.com/weebzone/WZML/wiki/Getting-Started)
+### 1. [***Getting Started***](https://github.com/Tamilupdates/weebzone/wiki/Getting-Started)
 Introduction To the Bot
 
-### 2. [***Features***](https://github.com/weebzone/WZML/wiki/Features)
+### 2. [***Features***](https://github.com/Tamilupdates/weebzone/wiki/Features)
 List of features supported by bot
 
-### 3. [***config.env Variables***](https://github.com/weebzone/WZML/wiki/Setting-up-the-config.env-file)
+### 3. [***config.env Variables***](https://github.com/Tamilupdates/weebzone/wiki/Setting-up-the-config.env-file)
 List of Variables used by the Bot
 
-### 4. [***Deploy***](https://github.com/weebzone/WZML/wiki/Deployment)
+### 4. [***Deploy***](https://github.com/Tamilupdates/weebzone/wiki/Deployment)
 Steps to Deploy the Bot to Run for Yourself
 
 ---
@@ -70,7 +70,7 @@ Copyright (C) 2022 infotamizhan
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program. < https://github.com/infotamizhan/KPSML/blob/master/LICENSE >.
+    along with this program. < https://github.com/Tamilupdates/KPSML/blob/master/LICENSE >.
 ```
 
 ---
