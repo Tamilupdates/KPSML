@@ -1,7 +1,7 @@
 <p align="center">
     <a href="https://github.com/Tamilupdates/KPSML">
         <kbd>
-            <img width="180" src="https://graph.org/file/7a3c091d0901751e5886f.jpg" alt="Nanthakps Logo">
+            <img width="180" src="https://graph.org/file/c2f574670f937de672ad0.jpg" alt="Nanthakps Logo">
         </kbd>
     </a>
 </p>
