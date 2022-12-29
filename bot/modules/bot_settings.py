@@ -20,7 +20,7 @@ STATE = 'view'
 handler_dict = {}
 default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'AUTO_DELETE_UPLOAD_MESSAGE_DURATION': -1,
-                  'BOT_PM': False,
+                  'BOT_PM': True,
                   'FORCE_BOT_PM': False,
                   'UPDATE_PACKAGES': 'False',
                   'UPSTREAM_BRANCH': 'v3',
