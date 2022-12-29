@@ -227,10 +227,7 @@ def start_listener():
                                   timeout=60)
 
 def add_aria2c_download(link: str, path, listener, filename, auth, ratio, seed_time):
-    args = {'dir': path, 'max-upload-limit': '1K', 'netrc-path': '/usr/src/app/.netrc'}
-    a2c_opt = {**aria2_options}
-    [a2c_opt.pop(k) for k in aria2c_global if k in aria2_options]
-    args.update(a2c_opt)
+    args = {'dir': path, 'max-upload-limit': '1K'}
     if filename:
         args['out'] = filename
     if auth:
@@ -239,21 +236,9 @@ def add_aria2c_download(link: str, path, listener, filename, auth, ratio, seed_t
         args['seed-ratio'] = ratio
     if seed_time:
         args['seed-time'] = seed_time
-    if TORRENT_TIMEOUT := config_dict['TORRENT_TIMEOUT']:
-        args['bt-stop-timeout'] = str(TORRENT_TIMEOUT)
     if is_magnet(link):
         download = aria2.add_magnet(link, args)
-    elif match(r'https?://.+\/\d+\:\/', link) and link[-1] == '/':
-        links, error = indexScrape({"page_token": "", "page_index": 0}, link, "none", "none", folder_mode=True)
-        if error:
-            LOGGER.info(f"Download Error: {links}")
-            return sendMessage(links, listener.bot, listener.message)
-        dls = []
-        for link in links:
-            dls.append(aria2.add_uris([link], args))
-        download = dls[0]
     else:
-        LOGGER.info(link)
         download = aria2.add_uris([link], args)
     if download.error_message:
         error = str(download.error_message).replace('<', ' ').replace('>', ' ')
