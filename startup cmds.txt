@@ -1,9 +1,0 @@
-apt -y update && apt -y upgrade
-
-git clone https://github.com/Tamilupdates/wzml
-
-git clone https://github.com/Tamilupdates/kpsml
-
-git clone https://github.com/Tamilupdates/weebzone
-
-git clone https://github.com/Tamilupdates/weebzone -b beta beta
