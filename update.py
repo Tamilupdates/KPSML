@@ -1,4 +1,3 @@
-# v2
 from logging import FileHandler, StreamHandler, INFO, basicConfig, error as log_error, info as log_info
 from os import path as ospath, environ
 from subprocess import run as srun
