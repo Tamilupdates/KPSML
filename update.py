@@ -50,11 +50,11 @@ if UPDATE_PACKAGES.lower() == 'true':
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
 if len(UPSTREAM_REPO) == 0:
-   UPSTREAM_REPO = 'https://github.com/Tamilupdates/weebzone'
+   UPSTREAM_REPO = 'https://github.com/Tamilupdates/KPSML'
 
 UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
 if len(UPSTREAM_BRANCH) == 0:
-    UPSTREAM_BRANCH = 'master'
+    UPSTREAM_BRANCH = 'v3'
 
 if UPSTREAM_REPO is not None:
     if ospath.exists('.git'):

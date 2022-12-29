@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/Tamilupdates/weebzone">
+    <a href="https://github.com/Tamilupdates/KPSML">
         <kbd>
             <img width="180" src="https://graph.org/file/c2f574670f937de672ad0.jpg" alt="WeebZone Logo">
         </kbd>
@@ -9,7 +9,7 @@
 <p align="center">
 <div align=center>
 
-[![GitHub forks](https://img.shields.io/github/forks/Tamilupdates/weebzone?style=social)](https://github.com/Tamilupdates/weebzone/fork)
+[![GitHub forks](https://img.shields.io/github/forks/Tamilupdates/weebzone?style=social)](https://github.com/Tamilupdates/KPSML/fork)
 [![GitHub followers](https://img.shields.io/github/followers/Tamilupdates?style=social&label=Followers)](https://github.com/Tamilupdates)
 
 ----
@@ -30,7 +30,7 @@
 ℹ️ A Powerful Pyrogram Based Telegram Mirror Leech Bot Modded by Tamilupdates to directly Mirror to Google Drive or Leech to Telegram, with Multi Direct Links Support for Enhanced Mirroring & Leeching.|
 ---|
     
-### ***Source Code*** : [Repo](https://github.com/Tamilupdates/weebzone)
+### ***Source Code*** : [Repo](https://github.com/Tamilupdates/KPSML)
 
 #### Note: `If you Like My Work, Give Stars ⭐ to the Repo and Follow Me on Github`
     
@@ -38,16 +38,16 @@
 </div>
 </p>
 
-### 1. [***Getting Started***](https://github.com/Tamilupdates/weebzone/wiki/Getting-Started)
+### 1. [***Getting Started***](https://github.com/Tamilupdates/KPSML/wiki/Getting-Started)
 Introduction To the Bot
 
-### 2. [***Features***](https://github.com/Tamilupdates/weebzone/wiki/Features)
+### 2. [***Features***](https://github.com/Tamilupdates/KPSML/wiki/Features)
 List of features supported by bot
 
 ### 3. [***config.env Variables***](https://github.comTamilupdates/weebzone/wiki/Setting-up-the-config.env-file)
 List of Variables used by the Bot
 
-### 4. [***Deploy***](https://github.com/Tamilupdates/weebzone/wiki/Deployment)
+### 4. [***Deploy***](https://github.com/Tamilupdates/KPSML/wiki/Deployment)
 Steps to Deploy the Bot to Run for Yourself
 
 ---
@@ -70,7 +70,7 @@ Copyright (C) 2022 WeebZone
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program. < https://github.com/Tamilupdates/weebzone/blob/master/LICENSE >.
+    along with this program. < https://github.com/Tamilupdates/KPSML/blob/master/LICENSE >.
 ```
 
 ---
