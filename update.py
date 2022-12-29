@@ -36,12 +36,12 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except:
-    UPSTREAM_REPO = "https://github.com/Tamilupdates/WZML"
+    UPSTREAM_REPO = "https://github.com/Tamilupdates/KPSML"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
 except:
-    UPSTREAM_BRANCH = 'master'
+    UPSTREAM_BRANCH = 'v1'
 
 if UPSTREAM_REPO is not None:
     if ospath.exists('.git'):
