@@ -16,7 +16,7 @@
 
 [![](https://img.shields.io/github/repo-size/Tamilupdates/KPSML?color=green&label=Repo%20Size&labelColor=292c3b)](#) [![](https://img.shields.io/github/commit-activity/m/Tamilupdates/KPSML?logo=github&labelColor=292c3b&label=Github%20Commits)](#) [![](https://img.shields.io/github/license/Tamilupdates/KPSML?style=flat&label=License&labelColor=292c3b)](#)|[![](https://img.shields.io/github/issues-raw/Tamilupdates/KPSML?style=flat&label=Open%20Issues&labelColor=292c3b)](#) [![](https://img.shields.io/github/issues-closed-raw/Tamilupdates/KPSML?style=flat&label=Closed%20Issues&labelColor=292c3b)](#) [![](https://img.shields.io/github/issues-pr-raw/Tamilupdates/KPSML?style=flat&label=Open%20Pull%20Requests&labelColor=292c3b)](#) [![](https://img.shields.io/github/issues-pr-closed-raw/Tamilupdates/KPSML?style=flat&label=Closed%20Pull%20Requests&labelColor=292c3b)](#)
 :---:|:---:|
-[![](https://img.shields.io/github/languages/count/Tamilupdates/KPSML?style=flat&label=Total%20Languages&labelColor=292c3b&color=blueviolet)](#) [![](https://img.shields.io/github/languages/top/Tamilupdates/KPSML?style=flat&logo=python&labelColor=292c3b)](#) [![](https://img.shields.io/github/last-commit/Tamilupdates/KPSML?style=flat&label=Last%20Commit&labelColor=292c3b&color=important)](#) [![](https://badgen.net/github/branches/Tamilupdates/KPSML?label=Total%20Branches&labelColor=292c3b)](#)|[![](https://img.shields.io/github/forks/Tamilupdates/KPSML?style=flat&logo=github&label=Forks&labelColor=292c3b&color=critical)](#) [![](https://img.shields.io/github/stars/Tamilupdates/KPSML?style=flat&logo=github&label=Stars&labelColor=292c3b&color=yellow)](#) [![](https://badgen.net/docker/pulls/weebzone/Tamilupdates?icon=docker&label=Pulls&labelColor=292c3b&color=blue)](#)
+[![](https://img.shields.io/github/languages/count/Tamilupdates/KPSML?style=flat&label=Total%20Languages&labelColor=292c3b&color=blueviolet)](#) [![](https://img.shields.io/github/languages/top/Tamilupdates/KPSML?style=flat&logo=python&labelColor=292c3b)](#) [![](https://img.shields.io/github/last-commit/Tamilupdates/KPSML?style=flat&label=Last%20Commit&labelColor=292c3b&color=important)](#) [![](https://badgen.net/github/branches/Tamilupdates/KPSML?label=Total%20Branches&labelColor=292c3b)](#)|[![](https://img.shields.io/github/forks/Tamilupdates/KPSML?style=flat&logo=github&label=Forks&labelColor=292c3b&color=critical)](#) [![](https://img.shields.io/github/stars/Tamilupdates/KPSML?style=flat&logo=github&label=Stars&labelColor=292c3b&color=yellow)](#) [![](https://badgen.net/docker/pulls/KPSML/Tamilupdates?icon=docker&label=Pulls&labelColor=292c3b&color=blue)](#)
 [![](https://img.shields.io/badge/Telegram%20Channel-Join-9cf?style=for-the-badge&logo=telegram&logoColor=blue&style=flat&labelColor=292c3b)](https://telegram.me/KPSTorrent) |[![](https://img.shields.io/badge/Support%20Group-Join-9cf?style=for-the-badge&logo=telegram&logoColor=blue&style=flat&labelColor=292c3b)](https://telegram.me/TorrentLeechGroup) |
 
 </div>
@@ -38,16 +38,16 @@
 </div>
 </p>
 
-### 1. [***Getting Started***](https://github.com/Tamilupdates/weebzone/wiki/Getting-Started)
+### 1. [***Getting Started***](https://github.com/Tamilupdates/KPSML/wiki/Getting-Started)
 Introduction To the Bot
 
-### 2. [***Features***](https://github.com/Tamilupdates/weebzone/wiki/Features)
+### 2. [***Features***](https://github.com/Tamilupdates/KPSML/wiki/Features)
 List of features supported by bot
 
-### 3. [***config.env Variables***](https://github.com/Tamilupdates/weebzone/wiki/Setting-up-the-config.env-file)
+### 3. [***config.env Variables***](https://github.com/Tamilupdates/KPSML/wiki/Setting-up-the-config.env-file)
 List of Variables used by the Bot
 
-### 4. [***Deploy***](https://github.com/Tamilupdates/weebzone/wiki/Deployment)
+### 4. [***Deploy***](https://github.com/Tamilupdates/KPSML/wiki/Deployment)
 Steps to Deploy the Bot to Run for Yourself
 
 ---
