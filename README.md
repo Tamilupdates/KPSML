@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://github.com/Tamilupdates/KPSML">
+    <a href="https://telegram.me/KPSML">
         <kbd>
             <img width="180" src="https://graph.org/file/c2f574670f937de672ad0.jpg" alt="Nanthakps Logo">
         </kbd>
