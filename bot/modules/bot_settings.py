@@ -24,7 +24,7 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'FORCE_BOT_PM': False,
                   'UPDATE_PACKAGES': 'False',
                   'UPSTREAM_BRANCH': 'master',
-                  'UPSTREAM_REPO': 'https://github.com/Tamilupdates/weebzone',
+                  'UPSTREAM_REPO': 'https://github.com/Tamilupdates/KPSML',
                   'STATUS_UPDATE_INTERVAL': 2,
                   'DOWNLOAD_DIR': '/usr/src/app/downloads/',
                   'TIME_GAP': -1,
@@ -412,7 +412,7 @@ def load_config():
 
     UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
     if len(UPSTREAM_REPO) == 0: 
-        UPSTREAM_REPO = 'https://github.com/Tamilupdates/weebzone'
+        UPSTREAM_REPO = 'https://github.com/Tamilupdates/KPSML'
 
     UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
     if len(UPSTREAM_BRANCH) == 0:   
