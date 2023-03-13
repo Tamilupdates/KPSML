@@ -289,11 +289,11 @@ help_string_telegraph_admin = f'''
 <br><br>
 • <b>/{BotCommands.PingCommand}</b>: Check how long it takes to Ping the Bot
 <br><br>
-• <b>/authorize</b>: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+• <b>/{BotCommands.AuthorizeCommand[0]}</b>: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 <br><br>
-• <b>/unauthorize</b>: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+• <b>/{BotCommands.UnAuthorizeCommand[0]}</b>: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 <br><br>
-• <b>/users</b>: show users settings (Only Owner & Sudo).
+• <b>/{BotCommands.UsersCommand[0]}</b>: show users settings (Only Owner & Sudo).
 <br><br>
 • <b>/{BotCommands.AddSudoCommand[0]}</b>: Add sudo user (Only Owner)
 <br><br>
@@ -307,6 +307,7 @@ help_string_telegraph_admin = f'''
 <br><br>
 • <b>/{BotCommands.RestartCommand[0]}</b>: Restart and update the bot (Only Owner & Sudo)
 '''
+
 
 help_admin = telegraph.create_page(
     title=f"{config_dict['TITLE_NAME']} Help",
@@ -351,6 +352,7 @@ if config_dict['SET_BOT_COMMANDS']:
         (f'{BotCommands.SearchCommand}','Search in Torrent'),
         (f'{BotCommands.UserSetCommand[0]}','Users settings'),
         (f'{BotCommands.StatusCommand[0]}','Get mirror status message'),
+        (f'{BotCommands.BotSetCommand[0]}','Bot settings'),
         (f'{BotCommands.SpeedCommand[0]}','Speedtest'),
         (f'{BotCommands.MediaInfoCommand[0]}','Get Information of telegram Files'),
         (f'{BotCommands.LogCommand}','Get the bot Log'),
