@@ -42,7 +42,7 @@ class _BotCommands:
         self.AddPaidCommand = getCommand(f'ADDPAID_COMMAND', f'addpaid{CMD_SUFFIX}'), f'apd{CMD_SUFFIX}'
         self.RmPaidCommand = getCommand(f'RMPAID_COMMAND', f'rmpaid{CMD_SUFFIX}'), f'rmpd{CMD_SUFFIX}'
         self.UsersCommand = getCommand(f'USERS_COMMAND', f'users{CMD_SUFFIX}'), f'usr{CMD_SUFFIX}'
-        self.AuthorizeCommand = getCommand(f'AUTH_COMMAND', f'sauthorize{CMD_SUFFIX}'), f'au{CMD_SUFFIX}'
+        self.AuthorizeCommand = getCommand(f'AUTH_COMMAND', f'authorize{CMD_SUFFIX}'), f'au{CMD_SUFFIX}'
         self.UnAuthorizeCommand = getCommand(f'UNAUTH_COMMAND', f'unauthorize{CMD_SUFFIX}'), f'ua{CMD_SUFFIX}'
         self.AddSudoCommand = getCommand(f'ADDSUDO_COMMAND', f'addsudo{CMD_SUFFIX}'), f'asd{CMD_SUFFIX}'
         self.RmSudoCommand = getCommand(f'RMSUDO_COMMAND', f'rmsudo{CMD_SUFFIX}'), f'rmsd{CMD_SUFFIX}'
