@@ -294,11 +294,11 @@ help_string_telegraph_admin = f'''
 <br><br>
 • <b>/{BotCommands.PingCommand}</b>: Check how long it takes to Ping the Bot
 <br><br>
-• <b>/authorize</b>: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+• <b>/{BotCommands.AuthorizeCommand[0]}</b>: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 <br><br>
-• <b>/unauthorize</b>: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+• <b>/{BotCommands.UnAuthorizeCommand[0]}</b>: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
 <br><br>
-• <b>/users</b>: Show authorized users (Only Owner & Sudo)
+• <b>/{BotCommands.UsersCommand[0]}</b>: show users settings (Only Owner & Sudo).
 <br><br>
 • <b>/{BotCommands.AddSudoCommand[0]}</b>: Add sudo user (Only Owner)
 <br><br>
@@ -366,11 +366,11 @@ if SET_BOT_COMMANDS:
         (f'{BotCommands.SearchCommand}','Search in Torrent'),
         (f'{BotCommands.SpeedCommand[0]}','Speedtest'),
         (f'{BotCommands.StatusCommand[0]}','Get mirror status message'),
-#        (f'{BotCommands.StatsCommand}','Show the Stats of machine the bot'),
+        (f'{BotCommands.StatsCommand}','Show the Stats of machine the bot'),
         (f'{BotCommands.MediaInfoCommand[0]}','Get Information of telegram Files'),
         (f'{BotCommands.DeleteCommand}','Delete file/folder from Drive'),
         (f'{BotCommands.CancelMirror}','Cancel a task'),
-#        (f'{BotCommands.CancelAllCommand[0]}','Cancel all downloading tasks'),
+        (f'{BotCommands.CancelAllCommand[0]}','Cancel all downloading tasks'),
         (f'{BotCommands.LogCommand}','Get the bot Log'),
         (f'{BotCommands.RestartCommand[0]}','Restart the bot'),
         (f'{BotCommands.PingCommand}','Ping the bot'),
@@ -436,13 +436,11 @@ def main():
                     with open(".restartmsg") as f:
                         chat_id, msg_id = map(int, f)
                     msg = f"😎Restarted successfully❗\n\n"
-                    msg += f"🧑‍💻Master: @{AUTHOR_NAME} 🔥\n"
                     msg += f"📅DATE: {date}\n"
                     msg += f"⌚TIME: {time}\n"
                     msg += f"🌐TIMEZONE: {TIMEZONE}\n"
                 else:
                     msg = f"😎Bot Restarted!\n\n"
-                    msg += f"🧑‍💻Master: @{AUTHOR_NAME} 🔥\n"
                     msg += f"📅DATE: {date}\n"
                     msg += f"⌚TIME: {time}\n"
                     msg += f"🌐TIMEZONE: {TIMEZONE}"
@@ -473,11 +471,11 @@ def main():
     if ospath.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
-        msg = f"😎Restarted successfully❗ \n\n🧑‍💻Master: @{AUTHOR_NAME} 🔥 \n📅DATE: {date}\n⌚TIME: {time}\n🌐TIMEZONE: {TIMEZONE}\n"
+        msg = f"😎Restarted successfully❗  \n📅DATE: {date}\n⌚TIME: {time}\n🌐TIMEZONE: {TIMEZONE}\n"
         bot.edit_message_text(msg, chat_id, msg_id)
         osremove(".restartmsg")
     elif not notifier_dict and AUTHORIZED_CHATS:
-        text = f"😎Bot Restarted❗ \n\n🧑‍💻Master: @{AUTHOR_NAME} 🔥 \n📅DATE: {date} \n⌚TIME: {time} \n🌐TIMEZONE: {TIMEZONE}"
+        text = f"😎Bot Restarted❗ \n📅DATE: {date} \n⌚TIME: {time} \n🌐TIMEZONE: {TIMEZONE}"
         for id_ in AUTHORIZED_CHATS:
             try:
                 bot.sendMessage(chat_id=id_, text=text, parse_mode=ParseMode.HTML)
@@ -504,7 +502,6 @@ def main():
     updater.start_polling(drop_pending_updates=IGNORE_PENDING_REQUESTS)
     LOGGER.info("💥𝐁𝐨𝐭 𝐒𝐭𝐚𝐫𝐭𝐞𝐝❗")
     signal(SIGINT, exit_clean_up)
-
 
 
 app.start()

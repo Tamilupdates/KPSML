@@ -42,9 +42,9 @@ class _BotCommands:
         self.RemnameCommand = getCommand('REMNAME_COMMAND', f'remname{CMD_INDEX}'), f'rem{CMD_INDEX}'
         self.CaptionCommand = getCommand('CAPTION_COMMAND', f'caption{CMD_INDEX}'), f'cap{CMD_INDEX}'
         self.UserLogCommand = getCommand('DUMPID_COMMAND', f'dumpid{CMD_INDEX}'), f'dump{CMD_INDEX}'
-        self.AuthorizedUsersCommand = getCommand('USERS_COMMAND', f'kpsusers{CMD_INDEX}'), f'usr{CMD_INDEX}'
-        self.AuthorizeCommand = getCommand('AUTH_COMMAND', f'kpsauthorize{CMD_INDEX}'), f'au{CMD_INDEX}'
-        self.UnAuthorizeCommand = getCommand('UNAUTH_COMMAND', f'kpsunauthorize{CMD_INDEX}'), f'ua{CMD_INDEX}'
+        self.AuthorizedUsersCommand = getCommand('USERS_COMMAND', f'users{CMD_INDEX}'), f'usr{CMD_INDEX}'
+        self.AuthorizeCommand = getCommand('AUTH_COMMAND', f'authorize{CMD_INDEX}'), f'au{CMD_INDEX}'
+        self.UnAuthorizeCommand = getCommand('UNAUTH_COMMAND', f'unauthorize{CMD_INDEX}'), f'ua{CMD_INDEX}'
         self.AddSudoCommand = getCommand('ADDSUDO_COMMAND', f'addsudo{CMD_INDEX}'), f'asd{CMD_INDEX}'
         self.RmSudoCommand = getCommand('RMSUDO_COMMAND', f'rmsudo{CMD_INDEX}'), f'rsd{CMD_INDEX}'
         self.PingCommand = getCommand('PING_COMMAND', f'ping{CMD_INDEX}')
