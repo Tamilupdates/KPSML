@@ -352,7 +352,7 @@ if config_dict['SET_BOT_COMMANDS']:
         (f'{BotCommands.SearchCommand}','Search in Torrent'),
         (f'{BotCommands.UserSetCommand[0]}','Users settings'),
         (f'{BotCommands.StatusCommand[0]}','Get mirror status message'),
-        (f'{BotCommands.BotSetCommand[0]}','Bot Settings..'),
+        (f'{BotCommands.BotSetCommand[0]}','Bot settings'),
         (f'{BotCommands.SpeedCommand[0]}','Speedtest'),
         (f'{BotCommands.MediaInfoCommand[0]}','Get Information of telegram Files'),
         (f'{BotCommands.LogCommand}','Get the bot Log'),
