@@ -57,7 +57,7 @@ Steps to Deploy the Bot to Run for Yourself
 [![](https://www.gnu.org/graphics/gplv3-with-text-136x68.png)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ```text
-Copyright (C) 2023 Tamil Updates
+Copyright (C) 2023 Tamilupdates
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
