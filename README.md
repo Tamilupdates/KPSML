@@ -70,7 +70,7 @@ Copyright (C) 2023 Tamilupdates
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program. < https://github.com/Tamilupdates/KPSML/blob/beta/LICENSE >.
+    along with this program. < https://github.com/Tamilupdates/KPSML/blob/master/LICENSE >.
 ```
 
 ---
