@@ -88,7 +88,7 @@ def stats(update, context):
                     f'<b>├ 💾 Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
                     f'<b>├ 💿 Disk Free:</b> {free}\n'\
                     f'<b>├ 🔺 Upload Data:</b> {sent}\n'\
-                    f'<b>╰ 🔻 Download Data:</b> {recv}\n\n'
+                    f'<b>╰─ 🔻 Download Data:</b> {recv}\n\n'
 
     else:
             stats = f'<b>╭─《🌐 BOT STATISTICS 🌐》</b>\n' \
@@ -101,7 +101,7 @@ def stats(update, context):
                     f'<b>├  Disk:</b> [{progress_bar(disk)}] {disk}%\n'\
                     f'<b>├  Disk Free:</b> {free}\n'\
                     f'<b>├  Upload Data:</b> {sent}\n'\
-                    f'<b>╰  Download Data:</b> {recv}\n\n'
+                    f'<b>╰─  Download Data:</b> {recv}\n\n'
 
 
 
