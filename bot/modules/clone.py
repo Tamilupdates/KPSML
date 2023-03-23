@@ -342,7 +342,7 @@ def start_clone(listelem):
         LOGGER.info(f'Cloning Done: {name}')
     if BOT_PM_X and message.chat.type != 'private':
         if config_dict['EMOJI_THEME']:
-            pmwarn = f"<b>😉I have sent files in PM.</b>\n"
+            pmwarn = f"<b>😉 I have sent files in PM.</b>\n"
         else:
             pmwarn = f"<b>I have sent files in PM.</b>\n"
     else:
