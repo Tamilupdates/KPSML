@@ -500,7 +500,7 @@ START_BTN1_NAME = environ.get('START_BTN1_NAME', '')
 START_BTN1_URL = environ.get('START_BTN1_URL', '')
 if len(START_BTN1_NAME) == 0 or len(START_BTN1_URL) == 0:
     START_BTN1_NAME = 'Master'
-    START_BTN1_URL = 'https://t.me/Nanthakps'
+    START_BTN1_URL = 'https://t.me/TamilupdatesOfficial'
 
 START_BTN2_NAME = environ.get('START_BTN2_NAME', '')
 START_BTN2_URL = environ.get('START_BTN2_URL', '')
@@ -587,7 +587,7 @@ if len(AUTHOR_NAME) == 0:
 
 AUTHOR_URL = environ.get('AUTHOR_URL', '')
 if len(AUTHOR_URL) == 0:
-    AUTHOR_URL = 'https://telegram.me/Nanthakps'
+    AUTHOR_URL = 'https://telegram.me/TamilupdatesOfficial'
 
 TITLE_NAME = environ.get('TITLE_NAME', '')
 if len(TITLE_NAME) == 0:
