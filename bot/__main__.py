@@ -206,8 +206,8 @@ def log(update, context):
 
 
 help_string = '''
-<b><a href='https://telegram.me/TamilupdatesOfficial'>Nanthakps</a></b> - The Ultimate Telegram Mirror-Leech Bot to Upload Your File & Link in Google Drive & Telegram\
-\n\n<b>Choose A Help Category:</b>
+<b>The Ultimate NFS MIRROR BOT to Upload Your File & Link in Google Drive & Telegram\
+\n\nOWNER >> <a href="http://t.me/nafisfuad1">B14CK-KN1GH7</a>\n\n<b>Choose A Help Category:</b>
 '''
 
 help_string_telegraph_user = f'''
