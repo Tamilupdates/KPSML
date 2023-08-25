@@ -206,7 +206,7 @@ def log(update, context):
 
 
 help_string = '''
-<b>The Ultimate NFS MIRROR BOT to Upload Your File & Link in Google Drive & Telegram\
+The Ultimate <b>NFS MIRROR BOT</b> to Upload Your File & Link in Google Drive & Telegram\
 \n\nOWNER >> <a href="http://t.me/nafisfuad1">B14CK-KN1GH7</a>\n\n<b>Choose A Help Category:</b>
 '''
 
