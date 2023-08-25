@@ -499,14 +499,14 @@ SHOW_LIMITS_IN_STATS = SHOW_LIMITS_IN_STATS.lower() == 'true'
 START_BTN1_NAME = environ.get('START_BTN1_NAME', '')
 START_BTN1_URL = environ.get('START_BTN1_URL', '')
 if len(START_BTN1_NAME) == 0 or len(START_BTN1_URL) == 0:
-    START_BTN1_NAME = 'Master'
-    START_BTN1_URL = 'https://t.me/TamilupdatesOfficial'
+    START_BTN1_NAME = '🔥 Master'
+    START_BTN1_URL = 'https://t.me/Nafisfuad1'
 
 START_BTN2_NAME = environ.get('START_BTN2_NAME', '')
 START_BTN2_URL = environ.get('START_BTN2_URL', '')
 if len(START_BTN2_NAME) == 0 or len(START_BTN2_URL) == 0:
-    START_BTN2_NAME = 'Support Channel'
-    START_BTN2_URL = 'https://t.me/KPSTorrent'
+    START_BTN2_NAME = '🔥 Support Channel'
+    START_BTN2_URL = 'https://t.me/gdrive_mirror'
 
 BUTTON_FOUR_NAME = environ.get('BUTTON_FOUR_NAME', '')
 BUTTON_FOUR_URL = environ.get('BUTTON_FOUR_URL', '')
