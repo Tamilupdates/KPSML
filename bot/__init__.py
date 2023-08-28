@@ -151,7 +151,7 @@ if len(SA_MAIL) == 0:
 
 TGH_THUMB = environ.get('TGH_THUMB', '')
 if len(TGH_THUMB) == 0:
-    TGH_THUMB = 'https://graph.org/file/eadb981256ac76c08917e.jpg'
+    TGH_THUMB = 'https://telegra.ph/file/c39492d4e4a276b2c0cbf.jpg'
 
 path = "Thumbnails/"
 if not ospath.isdir(path):

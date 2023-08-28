@@ -29,7 +29,7 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'DOWNLOAD_DIR': '/usr/src/app/downloads/',
                   'TIME_GAP': -1,
                   'TG_SPLIT_SIZE': tgBotMaxFileSize,
-                  'TGH_THUMB': 'https://graph.org/file/eadb981256ac76c08917e.jpg',
+                  'TGH_THUMB': 'https://telegra.ph/file/c39492d4e4a276b2c0cbf.jpg',
                   'START_BTN1_NAME': 'Master',
                   'START_BTN1_URL': 'https://t.me/TamilupdatesOfficial',
                   'START_BTN2_NAME': 'Support Channel',
@@ -120,7 +120,7 @@ def load_config():
 
     TGH_THUMB = environ.get('TGH_THUMB', '')
     if len(TGH_THUMB) == 0:
-        TGH_THUMB = 'https://graph.org/file/eadb981256ac76c08917e.jpg'
+        TGH_THUMB = 'https://telegra.ph/file/c39492d4e4a276b2c0cbf.jpg'
 
     SA_MAIL = environ.get('SA_MAIL', '')
     if len(SA_MAIL) == 0:
