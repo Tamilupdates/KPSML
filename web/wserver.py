@@ -770,7 +770,7 @@ def set_priority(id_):
 
 @app.route('/')
 def homepage():
-    return "<h1>See Master on Telegram : <a href='https://telegram.me/TamilupdatesOfficial'>Nanthakps</a></h1>"
+    return "<h1>See Master on Telegram : <a href='https://telegram.me/TamilupdatesOfficial'>Tamil Updates</a></h1>"
 
 @app.errorhandler(Exception)
 def page_not_found(e):

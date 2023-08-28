@@ -33,12 +33,12 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'START_BTN1_NAME': 'Master',
                   'START_BTN1_URL': 'https://t.me/TamilupdatesOfficial',
                   'START_BTN2_NAME': 'Support Channel',
-                  'START_BTN2_URL': 'https://t.me/KPSTorrent',
-                  'AUTHOR_NAME': 'Nanthakps',
+                  'START_BTN2_URL': 'https://t.me/TamilupdateOfficial',
+                  'AUTHOR_NAME': 'Tamil Updates',
                   'AUTHOR_URL': 'https://telegram.me/TamilupdatesOfficial',
                   'TITLE_NAME': 'Leech Bot',
                   'GD_INFO': 'Uploaded By Leech Bot',
-                  'CREDIT_NAME': '@Nanthakps',
+                  'CREDIT_NAME': '@TamilupdatesOfficial',
                   'NAME_FONT': 'i',
                   'CAPTION_FONT': 'b',
                   'FINISHED_PROGRESS_STR': '●',
@@ -491,7 +491,7 @@ def load_config():
     START_BTN2_URL = environ.get('START_BTN2_URL', '')
     if len(START_BTN2_NAME) == 0 or len(START_BTN2_URL) == 0:   
         START_BTN2_NAME = 'Support Channel'
-        START_BTN2_URL = 'https://t.me/KPSTorrent'
+        START_BTN2_URL = 'https://t.me/TamilupdateOfficial'
 
     BUTTON_FOUR_NAME = environ.get('BUTTON_FOUR_NAME', '')
     BUTTON_FOUR_URL = environ.get('BUTTON_FOUR_URL', '')
@@ -565,7 +565,7 @@ def load_config():
 
     AUTHOR_NAME = environ.get('AUTHOR_NAME', '')
     if len(AUTHOR_NAME) == 0:   
-        AUTHOR_NAME = 'Nanthakps'
+        AUTHOR_NAME = 'Tamil Updates'
 
     AUTHOR_URL = environ.get('AUTHOR_URL', '')
     if len(AUTHOR_URL) == 0:    
@@ -581,7 +581,7 @@ def load_config():
 
     CREDIT_NAME = environ.get('CREDIT_NAME', '')
     if len(CREDIT_NAME) == 0:   
-        CREDIT_NAME = '@Nanthakps'
+        CREDIT_NAME = '@TamilupdatesOfficial'
 
     NAME_FONT = environ.get('NAME_FONT', '')
     if len(NAME_FONT) == 0: 
